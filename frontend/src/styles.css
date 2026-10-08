@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  color: #222;
+}
+
+.container {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.task-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.task-form input[type='text'] {
+  flex: 1;
+}
+
+input,
+select,
+button {
+  padding: 6px 8px;
+  font-size: 14px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.filters {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.filters button.active {
+  background: #333;
+  color: #fff;
+}
+
+.counter {
+  margin-left: auto;
+  color: #666;
+  font-size: 14px;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.task .title {
+  flex: 1;
+}
+
+.task.done .title {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.task.editing input[type='text'] {
+  flex: 1;
+}
+
+.priority {
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.priority.low {
+  background: #4a9d4a;
+}
+
+.priority.medium {
+  background: #d99a1c;
+}
+
+.priority.high {
+  background: #c94040;
+}
+
+.due {
+  font-size: 13px;
+  color: #555;
+}
+
+.due.overdue {
+  color: #c94040;
+  font-weight: bold;
+}
+
+.error {
+  color: #c94040;
+}
+
+.empty {
+  color: #888;
+}
